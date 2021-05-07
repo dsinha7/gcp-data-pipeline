@@ -24,7 +24,7 @@ try:
         return text.translate(str.maketrans('','', '"'))
 except ImportError as error:
     # Fall back to Python 2's urllib2
-    from urllib2 import urlopen
+    #from urllib2 import urlopen
     def remove_quote(text):
         return text.translate(None, '"')
 
